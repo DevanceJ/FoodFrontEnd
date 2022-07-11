@@ -1,0 +1,230 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar styling */
+#navbar {
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    /* background-color: rgb(124, 117, 117); */
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    /* top: 0px;
+    left: 0px; */
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: logo */
+.logo img {
+    border-radius: 500px;
+    padding: 15px 6px;
+    height: 60px;
+}
+
+/* Navigation Bar: list */
+#navbar ul {
+    display: flex;
+    margin: 13px 11px;
+}
+
+#navbar ul li {
+    list-style: none;
+
+}
+
+.list li a {
+    font-size: 1.2rem;
+
+
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px 24px;
+    border-radius: 20px;
+
+}
+
+.list li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    /* height: 500px; */
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 600px;
+    background: url('../img/pexels-eneida-nieves-905847.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.home-btn {
+    padding: 4px 15px;
+    border: 2px solid white;
+    color: white;
+    background-color: saddlebrown;
+    margin: 15px 4px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+#services {
+    display: flex;
+    margin: 40px;
+}
+
+.h-ser {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.box {
+    border: 2px solid black;
+    text-align: center;
+    margin: 3px 6px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(243 208 208);
+}
+
+.box img {
+    border-radius: 360px;
+}
+
+#service-container {
+    margin-top: 10rem;
+}
+
+/* Client sections */
+#client-section {
+    height: 300px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background: url('../img/pexels-lukas-306046.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-logo img {
+    height: 80px;
+    margin: 0px 20px;
+    padding: 30px;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/pexels-craig-adderley-2306282.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.box-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.box-contact input,
+.box-contact textarea {
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.box-contact form {
+    width: 35%;
+}
+
+.box-contact label {
+    font-size: 1.2rem;
+}
+
+textarea {
+    width: 100%;
+    height: 20px;
+    transition-duration: 0.5s;
+}
+
+textarea:focus {
+    height: 200px;
+}
+.btn {
+    padding: 4px 15px;
+    border: 2px solid white;
+    color: rgb(57, 37, 37);
+    background-color: pink;
+    margin: 15px 4px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.foot {
+    text-align: center;
+    background: black;
+    color: white;
+}
